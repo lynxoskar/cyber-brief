@@ -1,0 +1,22 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark">
+<title>Cyber Brief · {{DATE}}</title><link rel="stylesheet" href="../style.css?v=1"></head><body><main>
+<header class="topbar"><a class="brand" href="../">Oskar's Cyber Brief</a><a class="date" href="../">&larr; All briefs</a></header>
+<div class="masthead"><div class="kicker">{{DATE_LONG}}</div><h1>{{HEADLINE}}</h1></div>
+<div class="kicker">Top stories</div>
+<section class="hero">
+<!-- STORY class: vul|inc|ta|vec|ai|cry|pol|mkt --><article class="story {{S1_CLASS}}"><span class="chip">{{S1_LABEL}}</span><h3>{{S1_HEADLINE}}</h3><p>{{S1_WHY}}</p><a href="{{S1_URL}}">{{S1_SOURCE}} &rarr;</a></article>
+<!-- repeat S2..S4 -->
+</section>
+<section class="area vul"><h2><span class="chip">Vulns</span>Actively exploited &amp; critical vulns</h2><ul>{{VUL_ITEMS}}</ul></section>
+<section class="area inc"><h2><span class="chip">Incidents</span>Incidents &amp; breaches</h2><ul>{{INC_ITEMS}}</ul></section>
+<section class="area ta"><h2><span class="chip">Actors</span>Threat actors</h2><ul>{{TA_ITEMS}}</ul></section>
+<section class="area vec"><h2><span class="chip">Vectors</span>New attack vectors &amp; techniques</h2><ul>{{VEC_ITEMS}}</ul></section>
+<section class="area ai"><h2><span class="chip">AI/Cloud</span>AI &amp; cloud security</h2><ul>{{AI_ITEMS}}</ul></section>
+<section class="area cry"><h2><span class="chip">Crypto</span>Crypto &amp; fraud</h2><ul>{{CRY_ITEMS}}</ul></section>
+<section class="area pol"><h2><span class="chip">Policy</span>Policy &amp; regulation</h2><h4>US</h4><ul>{{POL_US}}</ul><h4>EU &amp; Sweden</h4><ul>{{POL_EU}}</ul><h4>Asia</h4><ul>{{POL_ASIA}}</ul></section>
+<section class="area mkt"><h2><span class="chip">Markets</span>Cyber markets &amp; deals</h2><ul>{{MKT_ITEMS}}</ul></section>
+<section class="area yt"><h2><span class="chip">Channels</span>From your channels</h2><ul>{{YT_ITEMS}}</ul></section>
+<section class="area acc"><h2><span class="chip">X</span>From the accounts you follow</h2><ul>{{ACC_ITEMS}}</ul></section>
+<section class="area pot"><h2><span class="chip">New</span>New potentials</h2><ul>{{POT_ITEMS}}</ul></section>
+<p class="note">{{NOTES}}</p>
+<footer><a href="../">&larr; All briefs</a></footer></main></body></html>
