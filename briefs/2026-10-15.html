@@ -1,0 +1,79 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark">
+<title>Cyber Brief · 2026-10-15</title><link rel="stylesheet" href="../style.css?v=1"></head><body><main>
+<header class="topbar"><a class="brand" href="../">Oskar's Cyber Brief</a><a class="date" href="../">&larr; All briefs</a></header>
+<div class="masthead"><div class="kicker">Thursday, October 15, 2026</div><h1>CISA adds PAN-OS and Cisco email gateway to KEV, Microsoft dismantles Chinese phishing kits behind 1B+ messages, OLVX market admin arrested, AhsayCBS chain exploited for miners</h1></div>
+<div class="kicker">Top stories</div>
+<section class="hero">
+<article class="story vul"><span class="chip">Vulns</span><h3>Palo Alto PAN-OS authenticated RCE exploited, now in CISA KEV</h3><p>CVE-2026-0322 lets an authenticated attacker with management access run code as root. Limited in-the-wild use; due Oct 17.</p><a href="https://security.paloaltonetworks.com/CVE-2026-0322">Palo Alto Networks &rarr;</a></article>
+<article class="story vul"><span class="chip">Vulns</span><h3>Cisco Secure Email Gateway zero-day: crafted attachment to root</h3><p>CVE-2026-76519 (CVSS 9.8) is a path traversal in AMP when File Reputation is on. Fix is a Content Scanner Tools update, no reboot.</p><a href="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-esa-afw-zqYJkjxp">Cisco PSIRT &rarr;</a></article>
+<article class="story ta"><span class="chip">Actors</span><h3>Microsoft and Health-ISAC disrupt YAM Store, CoGUI and Iron Man</h3><p>Storm-2990 phishing kits enabled 1B+ scam messages to 75,000+ orgs since Jan. Domains seized under a Florida court order.</p><a href="https://www.microsoft.com/en-us/security/blog/2026/10/14/the-hidden-network-inside-the-phishing-infrastructure-ecosystem-powering-global-cybercrime/">Microsoft Security &rarr;</a></article>
+<article class="story ta"><span class="chip">Actors</span><h3>North Macedonia and FBI charge alleged OLVX stolen-data market admin</h3><p>A 20-year-old near Tetovo is charged over the 2023-2025 marketplace that listed 1,500+ stolen credential sets.</p><a href="https://therecord.media/olvx-cybercrime-marketplace-arrest-north-macedonia">The Record &rarr;</a></article>
+</section>
+<section class="area vul"><h2><span class="chip">Vulns</span>Actively exploited &amp; critical vulns</h2><ul>
+<li>CISA added four KEVs on Oct 14: PAN-OS CVE-2026-0322, Cisco SEG CVE-2026-76519, and AhsayCBS CVE-2026-105133 / CVE-2026-105134 (due Oct 17). <a href="https://www.cisa.gov/news-events/alerts/2026/10/14/cisa-adds-four-known-exploited-vulnerabilities-catalog">CISA</a></li>
+<li>Huntress: attackers chained the AhsayCBS auth bypass and command injection from Oct 7 to drop JSP webshells and XMRig miners. Patch 10.3.4.45 / 9.15.2.70. <a href="https://www.huntress.com/blog/ahsaycbs-flaws-exploit">Huntress</a></li>
+<li>Collabora Built-in CODE (CVE-2026-110447) is being used to plant PHP webshells on Nextcloud; disabling the app is not enough, update to 26.4.303+ or remove it. <a href="https://github.com/CollaboraOnline/online/security/advisories/GHSA-g3vx-3m76-fghh">Collabora advisory</a></li>
+<li>HKCERT issued same-day bulletins for the Cisco SEG and Palo Alto flaws. <a href="https://www.hkcert.org/security-bulletin/cisco-secure-email-gateway-remote-code-execution-vulnerability_20261015">HKCERT</a></li>
+</ul></section>
+<section class="area inc"><h2><span class="chip">Incidents</span>Incidents &amp; breaches</h2><ul>
+<li>Eclipse listed Japan Times and Taiwan Otsuka Pharmaceutical on its leak site (claim, unverified). <a href="https://www.ransomware.live/">ransomware.live</a></li>
+<li>N0n kept dumping anonymous "Company #NN" victims; Akira listed FOODMatch and a Canadian lobster shop; Qilin listed Joliet Public Schools (all leak-site claims). <a href="https://www.ransomware.live/">ransomware.live</a></li>
+<li>Russian travel site AnywayAnyDay suspended bookings after a cyberattack. <a href="https://therecord.media/russia-anywayanyday-travel-website-cyberattack">The Record</a></li>
+<li>Brooklyn DA and FBI seized 112 servers and disabled 241 domains in a crypto investment scam aimed at Russian speakers. <a href="https://www.brooklynda.org/2026/10/14/brooklyn-das-virtual-currency-unit-dismantles-infrastructure-of-multinational-crypto-investment-scam-that-targeted-russian-speakers/">Brooklyn DA</a></li>
+</ul></section>
+<section class="area ta"><h2><span class="chip">Actors</span>Threat actors</h2><ul>
+<li>Microsoft tracks the CoGUI / Haozi / Iron Man developers as Storm-2990; partners include Proofpoint, JC3, Resecurity, Cloudflare, Oracle and TRM Labs. <a href="https://blogs.microsoft.com/on-the-issues/2026/10/14/disrupting-the-service-economy-behind-transnational-cybercrime-operations/">Microsoft</a></li>
+<li>Talos and Recorded Future map Kazakhstan-nexus UAT-6275 (TAG-193 / Silent Lynx) against CIS government, water and energy targets (medium confidence on attribution). <a href="https://blog.talosintelligence.com/break-the-silence-kazakhstan-nexus-uat-6275-targets-cis-government-organizations/">Cisco Talos</a></li>
+<li>Unit 42: Casbaneiro now pairs its Delphi banking trojan with a Chromium extension that steals cookies and passwords via abused ScreenConnect trial tenants. <a href="https://x.com/Unit42_Intel/status/2110431971088253318">Unit 42</a></li>
+<li>Poland: PM Tusk says NSO/Pegasus manufacturer had technical access to data from the prior government's spyware ops; NSO did not comment. <a href="https://therecord.media/spyware-manufacturer-had-access-to-data-harvested-by-previous-polish-government">The Record</a></li>
+</ul></section>
+<section class="area vec"><h2><span class="chip">Vectors</span>New attack vectors &amp; techniques</h2><ul>
+<li>Nextcloud path: unauthenticated OS command injection in Collabora's richdocumentscode proxy when the local CODE server is down, writing <code>shx*.php</code> webshells. <a href="https://thehackernews.com/2026/10/hackers-backdoor-nextcloud-servers.html">The Hacker News</a> (confirm: <a href="https://github.com/CollaboraOnline/online/security/advisories/GHSA-g3vx-3m76-fghh">GHSA</a>)</li>
+<li>@malwrhunterteam: malware using an unlisted YouTube video's comments as a domain-generation / C2 dead-drop (uncommon DDR technique). <a href="https://x.com/malwrhunterteam/status/2110484745813680557">MalwareHunterTeam</a></li>
+<li>Noma Labs "SneakPeek": Claude Code Desktop preview pane could auto-render oversized HTML and exfiltrate local files (zero-click); patched in 1.30096.1+. <a href="https://noma.security/noma-labs/sneakpeek-how-the-preview-pane-in-claude-code-desktop-can-exfiltrate-your-data">Noma Labs</a></li>
+<li>Cloudflare: after Yandex data-center strikes, search crawling stopped but malicious bots migrated to other networks instead of going dark. <a href="https://blog.cloudflare.com/yandex-outage/">Cloudflare</a></li>
+</ul></section>
+<section class="area ai"><h2><span class="chip">AI/Cloud</span>AI &amp; cloud security</h2><ul>
+<li>Booz Allen OT lab: frontier AI agents met all eight objectives and reached an industrial control network from a perimeter compromise in just over 16 minutes (controlled test). <a href="https://www.boozallen.com/insights/cyber/frontier-si-reaches-ot-systems.html">Booz Allen</a></li>
+<li>Anthropic Claude Code Desktop SneakPeek flaw (CVSS ~8.7) shows agent/IDE preview surfaces as a new data-exfil path. <a href="https://www.darkreading.com/threat-intelligence/new-anthropic-sneakpeek-silent-zero-click-threat">Dark Reading</a></li>
+<li>Harmonic Security raised a $50M Series B (Crosspoint) for workforce AI-governance tooling; total funding ~$76M. <a href="https://www.securityweek.com/harmonic-security-raises-50-million-for-workforce-ai-protection/">SecurityWeek</a></li>
+</ul></section>
+<section class="area cry"><h2><span class="chip">Crypto</span>Crypto &amp; fraud</h2><ul>
+<li>Ledger asked resellers in Indonesia, Singapore, Thailand, Philippines, Vietnam, Malaysia and Hong Kong to halt sales and pull stock after the CryptoBilis implant case (material update). <a href="https://www.bleepingcomputer.com/news/security/ledger-asks-sellers-across-asia-to-halt-sales-after-supply-chain-attack/">BleepingComputer</a></li>
+<li>Krebs: UK sanctioned Cryptomus operator Xeltox Enterprises over alleged Russia-linked money laundering and sanctions evasion. <a href="https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/">Krebs on Security</a></li>
+<li>Balancer holders voted 99.2% to shut down 11 months after a $128M exploit; withdrawals-only from Oct 30, redemptions May 2027. <a href="https://rekt.news/out-of-balance">Rekt</a></li>
+</ul></section>
+<section class="area pol"><h2><span class="chip">Policy</span>Policy &amp; regulation</h2>
+<h4>US</h4><ul>
+<li>CISA's Oct 14 KEV alert cites BOD 26-04: federal agencies must prioritize these four internet-facing, full-control flaws and check for pre-patch compromise. <a href="https://www.cisa.gov/news-events/alerts/2026/10/14/cisa-adds-four-known-exploited-vulnerabilities-catalog">CISA</a></li>
+<li>Microsoft/Health-ISAC domain seizures for YAM Store / CoGUI / Iron Man were backed by an order from the U.S. District Court for the Southern District of Florida. <a href="https://blogs.microsoft.com/on-the-issues/2026/10/14/disrupting-the-service-economy-behind-transnational-cybercrime-operations/">Microsoft</a></li>
+</ul>
+<h4>EU &amp; Sweden</h4><ul>
+<li>CERT-SE published its October Patch Tuesday note covering Microsoft's record update set. <a href="https://www.cert.se/2026/10/patchtisdag-oktober-2026.html">CERT-SE</a></li>
+<li>Poland's prosecutor and ABW say the Pegasus server infection module stayed under NSO's exclusive control; Tusk called it a "crime against the state." <a href="https://therecord.media/spyware-manufacturer-had-access-to-data-harvested-by-previous-polish-government">The Record</a></li>
+</ul>
+<h4>Asia</h4><ul>
+<li>HKCERT published Oct 15 bulletins for Cisco Secure Email Gateway and Palo Alto products matching the new KEVs. <a href="https://www.hkcert.org/security-bulletin/palo-alto-products-multiple-vulnerabilities_20261015">HKCERT</a></li>
+<li>JPCERT/CC weekly report (Oct 15) covers SonicWall, NetScaler, Atlassian and Rejetto HFS, plus recent domestic unauthorized-access alerts. <a href="https://www.jpcert.or.jp/wr/2026/wr261015.html">JPCERT</a></li>
+</ul></section>
+<section class="area mkt"><h2><span class="chip">Markets</span>Cyber markets &amp; deals</h2><ul>
+<li>Wed close: CRWD $249.29 (-4.6%), PANW $375.04 (-5.5%), ZS $220.79 (-3.4%), NET $324.33 (-6.7%), FTNT $184.05 (-3.5%), OKTA $211.91 (-6.5%), S $22.82 (-5.0%). <a href="https://finance.yahoo.com/quote/CRWD/history/">Yahoo Finance</a></li>
+<li>Harmonic Security $50M Series B for AI workforce protection. <a href="https://www.securityweek.com/harmonic-security-raises-50-million-for-workforce-ai-protection/">SecurityWeek</a></li>
+</ul></section>
+<section class="area yt"><h2><span class="chip">Channels</span>From your channels</h2><ul>
+<li>Risky Business #855 (Wed): ShinyHunters "reaping phase," plus Brad Arkin on exploited NetScaler, Zimbra, SharePoint and Atlassian bugs. <a href="https://risky.biz/RB855/">risky.biz</a></li>
+<li>Darknet Diaries 180: Conti (Oct 6, still the latest). <a href="https://darknetdiaries.com/episode/180/">Darknet Diaries</a></li>
+<li class="empty">YouTube channel RSS returned 404 from this network today; no new Hammond / LiveOverflow / Black Hat / DEF CON / SANS titles confirmed.</li>
+</ul></section>
+<section class="area acc"><h2><span class="chip">X</span>From the accounts you follow</h2><ul>
+<li>@BleepinComputer and @TheHackersNews led with the PAN-OS and Cisco SEG zero-days as they hit KEV. <a href="https://x.com/BleepinComputer/status/2110505197705310305">BleepingComputer</a></li>
+<li>@malwrhunterteam flagged YouTube-comment DDR malware; @Unit42_Intel posted Casbaneiro + Chromium-extension IOCs. <a href="https://x.com/malwrhunterteam/status/2110484748824940859">MalwareHunterTeam</a></li>
+<li>@Cloudflare on Yandex-outage bot migration; @RektHQ on the Balancer wind-down vote; @troyhunt noted ASOS breach notifications going out. <a href="https://x.com/Cloudflare/status/2110470061571870906">Cloudflare</a></li>
+</ul></section>
+<section class="area pot"><h2><span class="chip">New</span>New potentials</h2><ul>
+<li><a href="https://www.huntress.com/blog/">Huntress</a> blog: primary write-up on the AhsayCBS webshell/miner exploitation wave.</li>
+<li><a href="https://noma.security/noma-labs/sneakpeek-how-the-preview-pane-in-claude-code-desktop-can-exfiltrate-your-data">Noma Labs</a>: discovered the Claude Code Desktop SneakPeek preview-pane exfil.</li>
+<li><a href="https://blog.talosintelligence.com/">Cisco Talos</a> blog: UAT-6275 / Silent Lynx CIS espionage series worth following.</li>
+</ul></section>
+<p class="note">Ransomware leak-site listings (Eclipse, N0n, Akira, Qilin, LockBit5, Wallstreet) are claims, unverified. YouTube RSS blocked (HTTP 404) from the research host; BleepingComputer and SecurityWeek RSS returned 403 (stories confirmed via X and primary vendor pages). THN used as lead for Nextcloud/Collabora and confirmed via Collabora GHSA. NCSC UK report feed was stale. Stock closes from Yahoo Finance chart API for Oct 14.</p>
+<footer><a href="../">&larr; All briefs</a></footer></main></body></html>
