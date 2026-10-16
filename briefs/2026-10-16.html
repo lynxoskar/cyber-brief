@@ -1,0 +1,83 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark">
+<title>Cyber Brief · 2026-10-16</title><link rel="stylesheet" href="../style.css?v=1"></head><body><main>
+<header class="topbar"><a class="brand" href="../">Oskar's Cyber Brief</a><a class="date" href="../">&larr; All briefs</a></header>
+<div class="masthead"><div class="kicker">Friday, October 16, 2026</div><h1>Zero-click spyware via targeted ads, Atlassian joins CISA KEV, BAE cyberattack halts US bankruptcy notices, Proofpoint buys Varonis for $6.3B</h1></div>
+<div class="kicker">Top stories</div>
+<section class="hero">
+<article class="story vec"><span class="chip">Vectors</span><h3>Zero-click “AdFection” spyware delivered through targeted online ads</h3><p>Citizen Lab and Confiant detail Candiru-linked spyware that infects when ads render, no click. Al Jazeera journalists and gov/NATO-adjacent networks among targets.</p><a href="https://www.wired.com/story/nightmare-scenario-zero-click-spyware-is-infecting-phones-via-targeted-ads/">WIRED &rarr;</a></article>
+<article class="story vul"><span class="chip">Vulns</span><h3>CISA adds Atlassian CVE-2026-21589 to KEV; federal due Oct 18</h3><p>Actively exploited unauthenticated file access across Confluence, Jira, Bitbucket, Bamboo, Crowd and other Data Center products. BOD 26-04 triage expected.</p><a href="https://www.cisa.gov/news-events/alerts/2026/10/15/cisa-adds-one-known-exploited-vulnerability-catalog">CISA &rarr;</a></article>
+<article class="story inc"><span class="chip">Incidents</span><h3>Cyberattack on BAE Systems disrupts US federal Bankruptcy Noticing Center</h3><p>AOUSC: BNC sites down nationwide; all bankruptcy notice production halted after a contractor incident BAE says is isolated to the BNC system.</p><a href="https://therecord.media/federal-bankruptcy-courts-dealing-with-cyberattack-outage">The Record &rarr;</a></article>
+<article class="story mkt"><span class="chip">Markets</span><h3>Proofpoint (Thoma Bravo) to acquire Varonis for about $6.3B all-cash</h3><p>Major data and AI security consolidation; close targeted for H1 2027 subject to approvals.</p><a href="https://www.proofpoint.com/us/newsroom/press-releases/proofpoint-acquire-varonis-creating-global-leader-data-and-ai-security">Proofpoint &rarr;</a></article>
+</section>
+<section class="area vul"><h2><span class="chip">Vulns</span>Actively exploited &amp; critical vulns</h2><ul>
+<li>CISA KEV (catalog 2026.10.15): added CVE-2026-21589 Atlassian arbitrary file access across multiple Data Center products; due Oct 18. <a href="https://www.cisa.gov/news-events/alerts/2026/10/15/cisa-adds-one-known-exploited-vulnerability-catalog">CISA</a> · <a href="https://confluence.atlassian.com/security/cve-2026-21589-arbitrary-file-access-vulnerability-impacts-multiple-products-1870495748.html">Atlassian</a></li>
+<li>Still urgent from Oct 14 KEV (due Oct 17): PAN-OS CVE-2026-0322 authenticated RCE as root; NHS England issued CC-4868 on Oct 15. <a href="https://security.paloaltonetworks.com/CVE-2026-0322">Palo Alto</a> · <a href="https://digital.nhs.uk/cyber-alerts/2026/cc-4868">NHS England</a></li>
+<li>Ivanti Connect Secure CVE-2026-104935 (KEV Oct 13, due Oct 16): unauth bypass to arbitrary commands; in-memory activity may evade Integrity Checker. <a href="https://www.bleepingcomputer.com/news/security/cisa-warns-admins-to-immediately-fix-ivanti-flaw-exploited-as-zero-day/">BleepingComputer</a></li>
+<li>Collabora Online CODE for Nextcloud CVE-2026-110447: unauth RCE via proxy.php when bundled CODE is down; webshells and wallet hunting; ransomware claims unconfirmed. Fix 26.4.303+ or remove the app. <a href="https://www.bleepingcomputer.com/news/security/hackers-exploit-collabora-rce-flaw-to-backdoor-nextcloud-servers/">BleepingComputer</a></li>
+</ul></section>
+<section class="area inc"><h2><span class="chip">Incidents</span>Incidents &amp; breaches</h2><ul>
+<li>US federal bankruptcy courts: BAE Systems cyberattack knocked BNC offline; noticing halted nationwide. Nature and any data theft not detailed. <a href="https://therecord.media/federal-bankruptcy-courts-dealing-with-cyberattack-outage">The Record</a></li>
+<li>UK Legal Aid Agency: MoJ update widens scope to ~250k records (some pre-2007), probation data and sensitive legal-aid fields; no confirmed public dump. <a href="https://therecord.media/uk-legal-aid-cyberattack-data">The Record</a></li>
+<li>CenterPoint Energy: Texas AG notice covers 1,062,060 Texans (names, addresses, SSNs, DL numbers); ops not impacted. <a href="https://www.securityweek.com/centerpoint-energy-data-breach-impacts-1-million-texans/">SecurityWeek</a></li>
+<li>French supermarket refrigeration OT attack widened to Danfoss/Copeland/Dixell controllers forced into defrost; hundreds of stores; no ransom claim. <a href="https://www.securityweek.com/supermarket-refrigeration-attack-widens-to-copeland-dixell-controllers/">SecurityWeek</a></li>
+</ul></section>
+<section class="area ta"><h2><span class="chip">Actors</span>Threat actors</h2><ul>
+<li>Candiru-linked mercenary spyware plus Discover-Tech / Controlium tooling in the AdFection ad-delivery campaign; Google/IAB/Beeswax actions reported. <a href="https://therecord.media/spyware-citizen-lab-advertising">The Record</a></li>
+<li>UAT-6275 / TAG-193 (suspected Kazakhstan-linked, medium confidence): ≥8 campaigns since Jan 2025 vs Central Asia / former Soviet govs; phishing plus WinRAR CVE-2025-8088. <a href="https://therecord.media/suspected-kazakhstan-phishing-central-asia-espionage">The Record</a></li>
+<li>Unit 42 CL-UNK-1211: AI-assisted tooling against government Linux (SysGoRAT, webshells, mailbox/DB theft attempts; Oct 2025 to Apr 2026). Affiliation unknown. <a href="https://unit42.paloaltonetworks.com/ai-campaign-targets-linux-infrastructure/">Unit 42</a></li>
+<li>Unit 42 PEERSTITCH FortiGate implant write-up (FortiManager CVE-2024-47575 chain). <a href="https://unit42.paloaltonetworks.com/fortimanager-cve-2024-47575-peerstitch-malware/">Unit 42</a></li>
+</ul></section>
+<section class="area vec"><h2><span class="chip">Vectors</span>New attack vectors &amp; techniques</h2><ul>
+<li>AdFection: RTB/ad targeting → JS → Candiru infra; Controlium fingerprinting and auto-infect without a click. <a href="https://techcrunch.com/2026/10/15/citizen-lab-says-governments-are-abusing-online-ads-to-hack-people-with-zero-click-spyware/">TechCrunch</a></li>
+<li>Fake Arch AUR packages typosquatting yay/paru drop a root install script (detected ~Oct 13, reported Oct 15). <a href="https://www.bleepingcomputer.com/news/security/fake-arch-linux-packages-push-malware-with-root-privileges/">BleepingComputer</a></li>
+<li>Attackers hijack D-Link and Ubiquiti gear to resell stolen bandwidth via residential-proxy style abuse. <a href="https://www.bleepingcomputer.com/news/security/hackers-hijack-d-link-ubiquiti-devices-to-resell-your-stolen-bandwidth/">BleepingComputer</a></li>
+<li>Novel Android banking RAT “Hirudo” replaces banking apps with trojanized copies; CikaBika Bot uses Discord for C2. <a href="https://www.securityweek.com/novel-android-banking-rat-hirudo-replaces-banking-apps-with-trojanized-copies/">SecurityWeek</a></li>
+</ul></section>
+<section class="area ai"><h2><span class="chip">AI/Cloud</span>AI &amp; cloud security</h2><ul>
+<li>Unit 42: CL-UNK-1211 shows AI-generated / agent-like payloads (conversational comments, multi-language switching) on Linux gov targets. <a href="https://unit42.paloaltonetworks.com/ai-campaign-targets-linux-infrastructure/">Unit 42</a></li>
+<li>Cloudflare shipped a programmable secure web gateway / DLP path with Workers. <a href="https://blog.cloudflare.com/programmable-gateway-dlp/">Cloudflare</a></li>
+<li>Cohere signed an LOI to acquire AISLE (AI vuln discovery/remediation; Prague hub). <a href="https://cohere.com/blog/cohere-and-aisle-sign-letter-of-intent-to-advance-cyber-resilient-sovereign-ai">Cohere</a></li>
+<li>Android adding AI defenses against messaging scams and fake calls. <a href="https://www.bleepingcomputer.com/news/security/android-gets-ai-defenses-against-messaging-scams-fake-calls/">BleepingComputer</a></li>
+</ul></section>
+<section class="area cry"><h2><span class="chip">Crypto</span>Crypto &amp; fraud</h2><ul>
+<li>UK Cryptomus sanctions coverage (edge of window, Oct 14): Xeltox Enterprises sanctioned over alleged Russia-linked laundering. <a href="https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/">Krebs on Security</a></li>
+<li>Collabora/Nextcloud victims were hunted for crypto wallets after the CODE RCE (incidental to the webshell wave). <a href="https://www.bleepingcomputer.com/news/security/hackers-exploit-collabora-rce-flaw-to-backdoor-nextcloud-servers/">BleepingComputer</a></li>
+<li class="empty">Quiet on fresh DeFi hacks; rekt.news RSS returned HTTP 500 this run.</li>
+</ul></section>
+<section class="area pol"><h2><span class="chip">Policy</span>Policy &amp; regulation</h2>
+<h4>US</h4><ul>
+<li>CISA Oct 15 KEV alert for Atlassian CVE-2026-21589 under BOD 26-04: agencies must prioritize and check for pre-patch compromise. <a href="https://www.cisa.gov/news-events/alerts/2026/10/15/cisa-adds-one-known-exploited-vulnerability-catalog">CISA</a></li>
+<li>CISA posted on election-security resources, ENISA CVE partnership, and US-Japan OT/cyber talks. <a href="https://x.com/CISAgov/status/2110842004645007429">CISA on X</a></li>
+</ul>
+<h4>EU &amp; Sweden</h4><ul>
+<li>UK Legal Aid Agency: parliamentary update with NCSC/NCA/ICO engaged after forensic scope widen. <a href="https://therecord.media/uk-legal-aid-cyberattack-data">The Record</a></li>
+<li>France CERT Santé and NHS England both alerted on PAN-OS CVE-2026-0322 (Oct 15). <a href="https://cyberveille.esante.gouv.fr/alertes/palo-alto-networks-cve-2026-0322-2026-10-15">CERT Santé</a></li>
+<li class="empty">Quiet from CERT-SE / ENISA / BSI primaries this run (feeds failed or stale).</li>
+</ul>
+<h4>Asia</h4><ul>
+<li>CISA-Japan OT/cyber engagement noted in CISA posts. <a href="https://x.com/CISAgov/status/2110842004645007429">CISA on X</a></li>
+<li>Qilin leak-site claim naming Keio Corporation (claim, unverified). <a href="https://www.ransomware.live/">ransomware.live</a></li>
+</ul></section>
+<section class="area mkt"><h2><span class="chip">Markets</span>Cyber markets &amp; deals</h2><ul>
+<li>Thu close: CRWD $244.57 (−1.9%), PANW $370.27 (−1.3%), ZS $220.43 (−0.2%), NET $316.32 (−2.5%), S $23.37 (+2.4%), FTNT $181.91 (−1.2%), OKTA $208.52 (−1.6%). <a href="https://finance.yahoo.com/quote/CRWD/history/">Yahoo Finance</a></li>
+<li>Proofpoint to acquire Varonis for about $6.3B all-cash; close targeted H1 2027. <a href="https://www.proofpoint.com/us/newsroom/press-releases/proofpoint-acquire-varonis-creating-global-leader-data-and-ai-security">Proofpoint</a></li>
+<li>Cohere LOI to acquire AISLE for AI cyber tooling. <a href="https://cohere.com/blog/cohere-and-aisle-sign-letter-of-intent-to-advance-cyber-resilient-sovereign-ai">Cohere</a></li>
+<li>GTCR leads a $200M second-lien term loan for Sophos. <a href="https://www.prnewswire.com/news-releases/gtcr-leads-200-million-second-lien-term-loan-for-sophos-302910299.html">PR Newswire</a></li>
+</ul></section>
+<section class="area yt"><h2><span class="chip">Channels</span>From your channels</h2><ul>
+<li>Risky Business #855 (Wed edge): ShinyHunters “reaping phase,” plus Brad Arkin on exploited NetScaler, Zimbra, SharePoint and Atlassian bugs. <a href="https://risky.biz/RB855/">risky.biz</a></li>
+<li class="empty">Darknet Diaries: still Ep 180 Conti (Oct 6); no new episode in window.</li>
+<li class="empty">YouTube channel RSS returned 404 from this network; no new Hammond / LiveOverflow / Black Hat / DEF CON / SANS titles confirmed.</li>
+</ul></section>
+<section class="area acc"><h2><span class="chip">X</span>From the accounts you follow</h2><ul>
+<li>@TheRecord_Media and @jsrailton led with AdFection / zero-click ad spyware. <a href="https://x.com/TheRecord_Media/status/2110809128931111104">The Record</a></li>
+<li>@BleepinComputer on Collabora/Nextcloud RCE, bandwidth hijacks, and fake Arch packages. <a href="https://x.com/BleepinComputer/status/2110829398605607206">BleepingComputer</a></li>
+<li>@Unit42_Intel posted PEERSTITCH/FortiGate; @SecurityWeek on CenterPoint and the fridge OT wave; @CISAgov on ENISA and US-Japan. <a href="https://x.com/Unit42_Intel/status/2110822781017285090">Unit 42</a></li>
+</ul></section>
+<section class="area pot"><h2><span class="chip">New</span>New potentials</h2><ul>
+<li><a href="https://x.com/billmarczak">@billmarczak</a> (Citizen Lab): lead author on the AdFection / ad-delivered spyware research.</li>
+<li><a href="https://twitter.com/Confiant">@Confiant</a> / Confiant research: co-investigator on ad-delivered spyware with Citizen Lab.</li>
+<li><a href="https://unit42.paloaltonetworks.com/">Unit 42</a> blog: CL-UNK-1211 AI-assisted Linux espionage and PEERSTITCH series worth keeping on the list.</li>
+</ul></section>
+<p class="note">Ransomware leak-site listings (Qilin, LockBit5, Akira, Incransom, N0n, Wallstreet, Iah6477) are claims, unverified. YouTube RSS blocked (HTTP 404); Ars Technica security RSS 404; rekt.news RSS 500; ENISA RSS 403; BSI/JPCERT/HKCERT RSS URLs tried returned 404; CERT-SE feed parse error. Citizen Lab PDF not fetched; AdFection confirmed via WIRED, The Record and TechCrunch. Stock closes from Yahoo Finance for Oct 15. Semperis AI-in-ransomware survey figures treated as vendor research and omitted from hero cards.</p>
+<footer><a href="../">&larr; All briefs</a></footer></main></body></html>
